@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/cardview_light_background"
+            android:padding="25dp">
+
+            <LinearLayout
+                android:id="@+id/lay_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <!-- Id Mesin-->
+                <TextView
+                    android:id="@+id/ti_id_mesin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID Mesin" />
+
+                <EditText
+                    android:id="@+id/ins_id_Mesin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:textSize="16dp" />
+                <!-- Id User-->
+                <TextView
+                    android:id="@+id/ti_id_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID User" />
+
+                <EditText
+                    android:id="@+id/ins_id_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:textSize="16dp" />
+                <!-- Tanggal -->
+                <TextView
+                    android:id="@+id/ti_tgl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal" />
+
+                <EditText
+                    android:id="@+id/ins_tgl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:hint="2018-12-01"
+                    android:inputType="date"
+                    android:textSize="16dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal">
+
+                    <!-- Drive_end_OV_H  Kiri -->
+                    <TextView
+                        android:id="@+id/ti_ovH"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="15dp"
+                        android:text="Drive End OV H" />
+
+                    <EditText
+                        android:id="@+id/ins_ovH"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:inputType="numberDecimal"
+                        android:textSize="16dp" />
+
+                    <!-- Non Drive_end_OV_H Kanan-->
+                    <TextView
+                        android:id="@+id/ti_non_ovH"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/ti_ovH"
+                        android:layout_toRightOf="@+id/ti_ovH"
+                        android:text="Non Drive End OV H" />
+
+                    <EditText
+                        android:id="@+id/ins_non_ovH"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/ins_ovH"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toRightOf="@+id/ins_ovH"
+                        android:inputType="numberDecimal"
+                        android:textSize="16dp" />
+
+                    <!-- Drive_end_BV_H  Kiri-->
+                    <TextView
+                        android:id="@+id/ti_ovV"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ins_ovH"
+                        android:layout_marginRight="15dp"
+                        android:text="Drive End OV V" />
+
+                    <EditText
+                        android:id="@+id/ins_ovV"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ti_ovV"
+                        android:layout_marginRight="15dp"
+                        android:inputType="numberDecimal"
+                        android:textSize="16dp" />
+
+                    <!-- Non Drive_end_OV_V Kanan-->
+                    <TextView
+                        android:id="@+id/ti_non_ovV"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/ti_ovV"
+                        android:layout_below="@+id/ins_non_ovH"
+                        android:layout_toRightOf="@+id/ti_bvH"
+                        android:text="Non Drive End OV V" />
+
+                    <EditText
+                        android:id="@+id/ins_non_ovV"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/ins_ovV"
+                        android:layout_below="@+id/ti_non_ovV"
+                        android:layout_toRightOf="@+id/ins_ovV"
+                        android:inputType="numberDecimal"
+                        android:textSize="16dp" />
+
+                    <!-- Drive_end_BV_H Kiri-->
+                    <TextView
+                        android:id="@+id/ti_bvH"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ins_ovV"
+                        android:layout_marginRight="15dp"
+                        android:text="Drive End BV H" />
+
+                    <EditText
+                        android:id="@+id/ins_bvH"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ti_bvH"
+                        android:layout_marginRight="15dp"
+                        android:inputType="numberDecimal"
+                        android:textSize="16dp" />
+
+                    <!-- Non_Drive_end_BV_H Kanan-->
+                    <TextView
+                        android:id="@+id/ti_non_bvH"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/ti_bvH"
+                        android:layout_below="@+id/ins_non_ovV"
+                        android:layout_toRightOf="@+id/ti_bvH"
+                        android:text="Non Drive End BV H" />
+
+                    <EditText
+                        android:id="@+id/ins_non_bvH"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/ins_bvH"
+                        android:layout_below="@+id/ti_non_bvH"
+                        android:layout_toRightOf="@+id/ins_bvH"
+                        android:inputType="numberDecimal"
+                        android:textSize="16dp" />
+
+                    <!-- Drive_end_BV_V Kiri-->
+                    <TextView
+                        android:id="@+id/ti_bvV"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ins_bvH"
+                        android:layout_marginRight="15dp"
+                        android:text="Drive End BV V" />
+
+                    <EditText
+                        android:id="@+id/ins_bvV"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ti_bvV"
+                        android:layout_marginRight="15dp"
+                        android:inputType="numberDecimal"
+                        android:textSize="16dp" />
+
+                    <!-- Non_Drive_end_BV_V Kanan-->
+                    <TextView
+                        android:id="@+id/ti_non_bvV"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/ti_bvV"
+                        android:layout_below="@+id/ins_non_bvH"
+                        android:layout_toRightOf="@+id/ti_bvH"
+                        android:text="Non Drive End BV V" />
+
+                    <EditText
+                        android:id="@+id/ins_non_bvV"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/ins_bvV"
+                        android:layout_below="@+id/ti_non_bvV"
+                        android:layout_toRightOf="@+id/ins_bvV"
+                        android:inputType="numberDecimal"
+                        android:textSize="16dp" />
+
+                    <!-- Temperatur_Drive Kiri-->
+                    <TextView
+                        android:id="@+id/ti_Temp_Drive"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ins_bvV"
+                        android:layout_marginRight="15dp"
+                        android:text="Temperatur Drive" />
+
+                    <EditText
+                        android:id="@+id/ins_Temp_Drive"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/ti_Temp_Drive"
+                        android:layout_marginRight="15dp"
+                        android:inputType="numberDecimal"
+                        android:textSize="16dp" />
+
+                    <!-- Temperatur Non Drive Kanan-->
+                    <TextView
+                        android:id="@+id/ti_Temp_non_Drive"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/ti_Temp_Drive"
+                        android:layout_below="@+id/ins_non_bvV"
+                        android:layout_toRightOf="@+id/ti_bvH"
+                        android:text="Temperatur Non Drive" />
+
+                    <EditText
+                        android:id="@+id/ins_Temp_non_Drive"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignTop="@+id/ins_Temp_Drive"
+                        android:layout_below="@+id/ti_Temp_non_Drive"
+                        android:layout_toRightOf="@+id/ins_Temp_Drive"
+                        android:inputType="numberDecimal"
+                        android:textSize="16dp" />
+
+                    <!-- Upload Foto  -->
+                    <ImageView
+                        android:id="@+id/ins_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ins_Temp_Drive"
+                        android:layout_marginRight="15dp"/>
+
+                    <EditText
+                        android:id="@+id/image_txt"
+                        android:hint="Kondisi Oli"
+                        android:layout_width="180dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/ins_Temp_Drive"
+                        android:layout_toRightOf="@+id/ins_img" />
+
+                    <Button
+                        android:id="@+id/btn_take_img"
+                        android:layout_width="80dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/ins_Temp_non_Drive"
+                        android:layout_toRightOf="@+id/image_txt"
+                        android:background="@drawable/btn_foto"
+                        android:text="Foto"/>
+
+                    <!-- Btn Simpan-->
+                    <Button
+                        android:id="@+id/ins_simpan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_take_img"
+                        android:layout_marginTop="18dp"
+                        android:background="@color/colorSecond"
+                        android:text="SIMPAN"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </ScrollView>
+</LinearLayout>

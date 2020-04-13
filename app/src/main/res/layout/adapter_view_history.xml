@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/thumbnail_hi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+
+    <TextView
+        android:id="@+id/tv_list_H_nama_mesin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail_hi"
+        android:layout_toRightOf="@+id/thumbnail_hi"
+        android:text="Nama Mesin"
+        android:textSize="@dimen/subtitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_list_H_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_list_H_nama_mesin"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail_hi"
+        android:text="Lokasi Mesin"
+        android:textSize="@dimen/rating" />
+
+    <TextView
+        android:id="@+id/tv_list_H_nomor_mesin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_list_H_area"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail_hi"
+        android:text="Nomor mesin"
+        android:textColor="@color/genre"
+        android:textSize="@dimen/genre" />
+
+    <TextView
+        android:id="@+id/tv_List_H_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_list_H_nomor_mesin"
+        android:layout_marginRight="10dp"
+        android:text="12-12-12018"
+        android:textColor="#09c10c"
+        android:textSize="@dimen/year" />
+
+</RelativeLayout>
